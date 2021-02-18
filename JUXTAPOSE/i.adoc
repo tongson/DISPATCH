@@ -83,7 +83,7 @@ Going over the known vulnerabilities of these products I see that both had sever
 
 Fortinet and SonicWall have appeared in major news several times because of a multitude of vulnerabilities. SonicWall recently made the news because of a breach of their internal network. They appear to be affected by a supply chain attack against a related vendor. Fortinet SSL VPNs credentials were also pilfered by attackers due to a vulnerability in FortiOS. The list goes on. Due to the black-box nature and widespread use of these appliances, there is a high chance that unknown vulnerabilities or a number of exploits are being hoarded by potential attackers.
 
-Having access to the support portal, we can see that Fortinet is doing a good job with firmware releases. Unfortunately, I was not able to obtain access to the SonicWall support portal to get a ppek at their firmware releases.
+Having access to the support portal, we can see that Fortinet is doing a good job with firmware releases. Unfortunately, I was not able to obtain access to the SonicWall support portal to get a peek at their firmware releases.
 
 SonicWall also appears to have more memory unsafe code usage than Fortinet. This is evidence that secure development practices are lacking. Again this is according to publicly reported vulnerabilities. If security is a major concern then individual research is recommended.
 
