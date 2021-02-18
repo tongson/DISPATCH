@@ -1,6 +1,6 @@
 [big]*juxtapose i*
 
-8-10 minutes
+^8-10 minutes^
 
 == FortiGate x SonicWall
 This comparison of network equipment was commissioned by a client. I am evaluating Fortinet and SonicWall products. No practical testing was done. This will be a factual objective comparison using publicly available information. Hopefully, the reader will integrate my findings with their own evaluation criteria.
