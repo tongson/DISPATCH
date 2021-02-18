@@ -1,0 +1,90 @@
+[big]*juxtapose i*
+
+== FortiGate x SonicWall
+This comparison of network equipment was commissioned by a client. I am evaluating Fortinet and SonicWall products. No practical testing was done. This will be a factual objective comparison using publicly available information. Hopefully, the reader will integrate my findings with their own evaluation criteria.
+
+The first impression from my client’s demo experience is that Fortigate had the best coordination and quickest turnaround. SonicWall had some difficulty and delays but eventually delivered a working demo. Three vendors including Sophos was supposed to be evaluated but my client had the most trouble with them. Important requirements were not fulfilled by Sophos.
+
+Vendors should carefully choose distributors. A poor product demo will easily cost you that sale and may tarnish other products under your brand.
+
+=== Background
+
+==== SonicWall
+
+Started in the ’90s as Sonic Systems producing network equipment for Apple computers. When they pivoted to network security they changed their name to SonicWALL which went public during the Dot-com bubble as $SNWL. A decade later they went private again after being acquired by an investor group. They were sold to Dell in 2012 and then later sold to a private equity firm in 2016.
+
+Without going through metrics like EBITDA and accounting methods it is difficult to gauge the earnings of a private company. I did not find compelling public research and development even from marketing materials. As with any company under private equity, we can’t expect significant research funding. After changing hands several times the original ethos is probably completely diluted.
+
+==== Fortinet
+
+Founded in 2000 and went through name changes before settling on “Fortinet” from “Fortified Networks”. Their first and most famous product line is FortiGate. Several products are still being sold under this umbrella. Fortinet went public in 2009 under the $FTNT symbol.
+
+The latest reported revenue as of late 2020 is USD650M. Public information states around 20.000 customers. Marketing and industry activity seems prolific by having a research team and collaboration with other cybersecurity companies. It also reflects well on the brand by working with government organizations such as NATO, Interpol, and IRS.
+
+=== Hardware & Software
+
+.SonicWall products:
+[options="header,footer",width="60%"]
+|=================
+|Product |Model
+|SonicWall |SOHO 250
+|SonicWall |NSA 6600
+|=================
+
+.Fortinet products:
+[options="header,footer",width="60%"]
+|=================
+|Product |Model
+|FortiGate |90D
+|FortiGate |300E
+|=================
+
+==== SonicWall SOHO 250
+
+From SonicWall, we have the SOHO 250 with its plastic body–which lives up to its SOHO moniker. It has five GbE RJ45 ports, three are configurable. It boasts higher throughput against the Fortinet entry. From the lowest figure, 40+ Mbps; that’s more than double from the Fortinet counterpart. It has threat protection, SD-WAN, and deep packet inspection capabilities. Firewall, SSL-VPN, and IPsec are common for these types of equipment.
+
+==== SonicWall NSA 6600
+
+As a counterpart to the SOHO 250, we have the NSA 6600 which should be placed in a central location. SonicWall appliance appears to have fewer ports than the competition. I see eight GbE RJ45 ports, eight GbE SFP ports, but it has four 10GbE SFP ports. If you need 10GbE capability then the 6600 wins here.
+
+The lowest throughput figure is 3Gbps which puts it above 2Gbps in practical throughput. I see mentions of specialized processors but they do not boast it like Fortinet. I suspect x86-64 processors with small participation from an ASIC or FPGA type unit.
+
+==== SonicOS
+
+There is evidence from job postings that SonicOS is also based on Linux. A boot log from 2013 shows Linux kernel 2.6.18 booting from a SonicOS firmware. They appear to be using multiple control planes and possibly different operating systems for a particular plane. VxWorks is mentioned in those old job postings.
+
+==== FortiGate 90D
+
+The touted features are UTM and SD-WAN deployments. The datasheet indicates several throughput figures but the lowest is the most realistic for Internet-facing traffic. It says 18Mbps but in practice, the maximum is probably closer to 14-16Mbps. From the product pictures, we see fourteen GbE RJ45 LAN ports and two GbE RJ45 WAN ports.
+
+The data sheet boasts a “RISC” CPU but this is usually a marketing term for ARM or MIPS. There’s a security processing unit (SPU) SoC2 mentioned that may mean software in flash or even, although unlikely, ASIC or FPGA. It comes in a small metal chassis that requires a rack tray for placement.
+
+==== FortiGate 300E
+
+As a counterpart to the 90D, we have the 300E. From the datasheet, it says it is a Next Generation Firewall(NGFW) and a Secure Web Gateway(SWG). With an AI-powered IPS and TLS 1.3 MITM capability. To be able to integrate with the 90D, it also has the SD-WAN feature.
+
+It has similar throughput as the competition. No mention of a separate CPU besides the Fortinet SPU CP9/NP9 processor. It has ample connectivity by way of sixteen GbE RJ45 ports and another sixteen GbE SFP ports. It comes in a 1U rackmount metal chassis.
+
+==== FortiOS
+
+The Fortinet operating system powers the line of FortiGate products. You can think of it as a Linux distribution with web UI and proprietary code to interface with their equally proprietary hardware like the Fortinet SPU. Past GPL violations show that they do not like to acknowledge their use of Linux or other open-source software.
+
+Version 5 of FortiOS was using Linux kernel 2.4.x, we can hope that version 6 is now running even the Linux kernel 4.x series.
+
+=== Support
+
+Pre-sales support from Fortinet is excellent. I easily obtained access to resources and firmware images simply by creating my own account. I did not find an obvious way to create a similar account for the SonicWall support portal. It looks like you need to be an existing customer or owner of a SonicWall product to get access to the portal.
+
+The Fortinet support portal is snappy and responsive. The available support material also looks very well made. There’s a lot to digest but should not be a problem for technical people that usually need access to these type of resource.
+
+=== Security & Vulnerabilities
+
+Going over the known vulnerabilities of these products I see that both had severe problems due to the web interface for administrators. Given the attack surface, it’s no surprise. A command-line interface will always be more secure. I saw several reported vulnerabilities that can let unauthenticated attackers perform a complete takeover of the target appliance.
+
+Fortinet and SonicWall have appeared in major news several times because of a multitude of vulnerabilities. SonicWall recently made the news because of a breach of their internal network. They appear to be affected by a supply chain attack against a related vendor. Fortinet SSL VPNs credentials were also pilfered by attackers due to a vulnerability in FortiOS. The list goes on. Due to the black-box nature and widespread use of these appliances, there is a high chance that unknown vulnerabilities or a number of exploits are being hoarded by potential attackers.
+
+SonicWall also appears to have more memory unsafe code usage than Fortinet. This is evidence that secure development practices are lacking. Again this is according to publicly reported vulnerabilities. If security is a major concern then individual research is recommended.
+
+=== Cost
+
+According to the client, the SonicWall set is cheaper by USD100,000. If you are buying these types of appliances other factors are more important like features, ease of use, and track record. These appliances also do subscriptions now. It would be better to compute the ongoing costs of maintaining or continuous use of the product instead of deciding based on the initial cost.
