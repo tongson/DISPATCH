@@ -31,14 +31,6 @@ The latest reported revenue as of late 2020 is USD650M. Public information state
 |SonicWall |NSA 6600
 |=================
 
-.Fortinet products:
-[options="header,footer",width="60%"]
-|=================
-|Product |Model
-|FortiGate |90D
-|FortiGate |300E
-|=================
-
 ==== SonicWall SOHO 250
 
 From SonicWall, we have the SOHO 250 with its plastic body–which lives up to its SOHO moniker. It has five GbE RJ45 ports, three are configurable. It boasts higher throughput against the Fortinet entry. From the lowest figure, 40+ Mbps; that’s more than double from the Fortinet counterpart. It has threat protection, SD-WAN, and deep packet inspection capabilities. Firewall, SSL-VPN, and IPsec are common for these types of equipment.
@@ -52,6 +44,14 @@ The lowest throughput figure is 3Gbps which puts it above 2Gbps in practical thr
 ==== SonicOS
 
 There is evidence from job postings that SonicOS is also based on Linux. A boot log from 2013 shows Linux kernel 2.6.18 booting from a SonicOS firmware. They appear to be using multiple control planes and possibly different operating systems for a particular plane. VxWorks is mentioned in those old job postings.
+
+.Fortinet products:
+[options="header,footer",width="60%"]
+|=================
+|Product |Model
+|FortiGate |90D
+|FortiGate |300E
+|=================
 
 ==== FortiGate 90D
 
