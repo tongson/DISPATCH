@@ -39,6 +39,8 @@ The chosen option is named `protojank` because some people might think it's jank
 * Other codes like format effectors and information separators *MUST NOT* be used.
 * C1 codes *MUST NOT* be used.
 * Untrusted input *MUST* be encoded as base64 before adding as a JSON data value.
+* C0 codes that has meaning in C *MUST NOT* be used. Example: NUL, BEL, etc.
+* C0 codes that has meaning in keyboard input or Unix terminals *MUST NOT* be used. Example: ETX and EOT.
 
 ==== Allowed C0 codes
 
