@@ -23,9 +23,9 @@ This is the default choice for plaintext protocols but it comes with sustained o
 Another good choice but CBOR modules between Rust and Lua do not cooperate well.
 
 ===== Structs
-The obvious choice but passing around Structs seems complicated. C and Rust Structs are different.
+The obvious choice but passing around Structs seems complicated. C and Rust Structs are not the same.
 
-===== C0 control codes + JSON + Base64
+===== Mixed
 The solution we ended up with is a combination of C0 control codes, JSON, and base64.
 
 
