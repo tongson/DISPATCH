@@ -1,0 +1,66 @@
+== protojank
+
+* Date: 2021-Mar-04
+* Deciders: @tongson
+* Status: ACCEPTED
+
+=== Context
+
+Rust can compile to shared objects that LuaJIT can FFI into. We decide here the protocl to which Rust and LuaJIT can interface.
+
+==== Decision Drivers
+
+* Plaintext
+* Simple
+* Safe
+
+==== Considered Options
+
+.JSON
+This is the default choice for plaintext protocols but it comes with sustained overhead if used all the time. The second standalone choice. We will still use JSON as part of the protocol.
+
+.CBOR
+Another good choice but CBOR modules between Rust and Lua do not cooperate well.
+
+.Structs
+The obvious choice but passing around Structs seems complicated. C and Rust Structs are different.
+
+.C0 control codes + JSON + Base64
+The solution we ended up with is a combination of C0 control codes, JSON, and base64.
+
+
+=== Decision || Solution
+
+The chosen option is named `protojank` because some people might think it's janky. We are ahead of them here. We will use a combination of ASCII C0 codes, JSON, and base64.
+
+==== Constraints || Convention
+
+* Only transmission and device control codes SHALL be used.
+* Other codes like format effectors and information separators MUST NOT be used.
+* C1 codes MUST NOT be used.
+* Untrusted input MUST be encoded as base64 before adding as a JSON data value.
+
+==== Allowed C0 codes
+
+.Transmission controls
+[options="header,footer",width="60%"]
+|=======================
+|Decimal |Abbreviation |Name |Usage
+|01    |SOH     |Start of Heading |Separator
+|02    |STX     |Start of Text |RESERVED
+|05    |ENQ     |Enquiry |Trigger response at the receiving end
+|06    |ACK     |Acknowledge |Success
+|21    |NAK     |Negative Acknowledge |Failure or error
+|23    |ETB     |End of Transmission Block |End
+|=======================
+
+.Device controls
+[options="header,footer",width="60%"]
+|=======================
+|Decimal |Abbreviation |Name |Usage
+|17    |DC1 |Device Control One |On
+|18    |DC2 |Device Control Two |Continue
+|19    |DC3 |Device Control Three |Off
+|20    |DC4 |Device Control Four |Pause
+|=======================
+
