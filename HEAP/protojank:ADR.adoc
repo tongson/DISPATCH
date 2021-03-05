@@ -19,7 +19,7 @@ We decide here the protocol to which Rust and LuaJIT can interface.
 ==== Considered Options
 
 ===== (a) JSON
-This is the default choice for plaintext protocols but it comes with sustained overhead if used all the time. The second standalone choice. We will still use JSON as part of the protocol.
+This is the default choice for plaintext protocols but it comes with sustained overhead if used all the time. The top contender for the solution. We will still use JSON as part of the protocol.
 
 ===== (b) CBOR
 Another good choice but CBOR modules between Rust and Lua do not cooperate well.
