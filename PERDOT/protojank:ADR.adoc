@@ -50,7 +50,7 @@ The chosen option is named `protojank` because some people might think it's jank
 ==== Allowed C0 codes
 
 .Transmission controls
-[options="header,footer",width="60%"]
+[options="header",width="60%"]
 |=======================
 |Decimal |Abbreviation |Name |Usage
 |01    |SOH     |Start of Heading |Separator
@@ -66,7 +66,7 @@ The chosen option is named `protojank` because some people might think it's jank
 * SOH doing a flip would terminate the CString
 
 .Device controls
-[options="header,footer",width="60%"]
+[options="header",width="60%"]
 |=======================
 |Decimal |Abbreviation |Name |Usage
 |17    |DC1 |Device Control One |On
