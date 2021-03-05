@@ -1,0 +1,9 @@
+# DISPATCH
+Dumping ground for murdered words.
+
+____
+I wake up in a sweat. Parched. I hurry down the stairs but the surface is grey hair. I will cut you! I said. Looking for the scissors in the drawers. A commotion. Scissors screams of filthy words. The subtended joints are piercing eyes. My ears are ringing. I try to close my eyes but the scissors have stabbed me in the eyes. The pain is unbearable. 
+
+I wake up in a boat. The wind hits my face. It's just a nightmare, I thought. It's the middle of the sea. The sun at its strongest. Terrified. I don't know how to swim.
+____
+
