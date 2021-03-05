@@ -79,4 +79,5 @@ The chosen option is named `protojank` because some people might think it's jank
 .Observations
 * Can be used for state machines
 * DC1, DC3 would be susceptible to bit flips *BUT* results in a NOOP
+* DC0 may flip to DC1, DC2, or DC4
 
