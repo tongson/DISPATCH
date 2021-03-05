@@ -62,7 +62,7 @@ The chosen option is named `protojank` because some people might think it's jank
 |=======================
 
 .Observations
-* ACK, NAK resistant to bit flips
+* ACK, NAK resistant to bit flip confusion
 * SOH doing a flip would terminate the CString
 
 .Device controls
