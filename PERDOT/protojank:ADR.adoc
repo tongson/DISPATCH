@@ -69,6 +69,7 @@ The chosen option is named `protojank` because some people might think it's jank
 [options="header",width="60%"]
 |=======================
 |Decimal |Abbreviation |Name |Usage
+|16    |DLE |Data Link Escape | Any (Can be considered DC0)
 |17    |DC1 |Device Control One |On
 |18    |DC2 |Device Control Two |Continue
 |19    |DC3 |Device Control Three |Off
