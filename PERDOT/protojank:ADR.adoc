@@ -49,8 +49,8 @@ The chosen option is named `protojank` because some people might think it's jank
 |=======================
 |Decimal |Abbreviation |Name |Usage
 |01    |SOH     |Start of Heading |Separator
-|02    |STX     |Start of Text |RESERVED
-|05    |ENQ     |Enquiry |Trigger response at the receiving end
+|02    |STX     |Start of Text |Any or pair with ETB
+|05    |ENQ     |Enquiry |Trigger response at the receiving end which may send ACK or NAK
 |06    |ACK     |Acknowledge |Success
 |21    |NAK     |Negative Acknowledge |Failure or error
 |23    |ETB     |End of Transmission Block |End
