@@ -12,9 +12,9 @@ We decide here the protocol to which Rust and LuaJIT can interface.
 
 ==== Decision Drivers
 
-* Plaintext
-* Simple
-* Safe
+. Simple
+. Plaintext
+. Safe
 
 ==== Considered Options
 
@@ -25,7 +25,7 @@ This is the default choice for plaintext protocols but it comes with sustained o
 Another good choice but CBOR modules between Rust and Lua do not cooperate well.
 
 ===== (c) Structs
-The obvious choice but passing around Structs seems complicated. C and Rust Structs are not the same.
+The obvious choice but passing around Structs is complicated. C and Rust Structs have to be coordinated.
 
 ===== (d) Base64
 No structure and steady overhead.
@@ -36,7 +36,7 @@ The solution we ended up with is a combination of C0 control codes, JSON, and ba
 
 === Decision, Solution
 
-The chosen option is named `protojank` because some people might think it's janky. We are ahead of them here. We will use a combination of ASCII C0 codes, JSON, and base64.
+The chosen option is named `protojank` because some people might think it's janky. We are ahead of them here. We will use a combination of ASCII C0 codes, JSON, and base64. Rust CString and C strings agree on NUL(\0) terminated strings, so it is a common denominator.
 
 ==== Constraints, Convention
 
