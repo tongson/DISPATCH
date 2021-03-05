@@ -27,7 +27,10 @@ Another good choice but CBOR modules between Rust and Lua do not cooperate well.
 ===== (c) Structs
 The obvious choice but passing around Structs seems complicated. C and Rust Structs are not the same.
 
-===== (d) Mixed
+===== (d) Base64
+No structure and steady overhead.
+
+===== (e) Mixed
 The solution we ended up with is a combination of C0 control codes, JSON, and base64.
 
 
