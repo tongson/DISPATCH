@@ -6,7 +6,10 @@
 
 === Context
 
-Rust can compile to dynamic libraries for C ABI interoperability. LuaJIT's FFI is extremely good and fast. With this combination we can take advantage of the huge catalog of Rust crates. It is possible to write Rust libraries that LuaJIT can call into. We decide here the protocol to which Rust and LuaJIT can interface.
+LuaJIT's C FFI is extremely good and fast. Rust can compile to dynamic libraries for C ABI interoperability. The idea is to write Rust libraries that LuaJIT can call into. This combination allows us to take advantage of the huge catalog of Rust crates. 
++
++
+We decide here the protocol to which Rust and LuaJIT can interface.
 
 ==== Decision Drivers
 
