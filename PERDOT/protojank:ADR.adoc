@@ -56,6 +56,9 @@ The chosen option is named `protojank` because some people might think it's jank
 |23    |ETB     |End of Transmission Block |End
 |=======================
 
+.Observations
+* ACK, NAK resistant to bit flips
+
 .Device controls
 [options="header,footer",width="60%"]
 |=======================
@@ -65,4 +68,8 @@ The chosen option is named `protojank` because some people might think it's jank
 |19    |DC3 |Device Control Three |Off
 |20    |DC4 |Device Control Four |Pause
 |=======================
+
+.Observations
+* Can be used for state machines
+* DC1, DC3 would be susceptible to bit flips *BUT* results in a NOOP
 
