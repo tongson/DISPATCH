@@ -13,6 +13,7 @@ We decide here the protocol to which Rust and LuaJIT can interface.
 ==== Decision Drivers
 
 . Simple
+. Lightweight
 . Plaintext
 . Safe
 
