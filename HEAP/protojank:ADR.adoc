@@ -39,7 +39,7 @@ The solution we ended up with is a combination of C0 control codes, JSON, and ba
 
 The chosen option is named `protojank` because some people might think it's janky. We are ahead of them here. We will use a combination of ASCII C0 codes, JSON, and base64. Rust CString and C strings agree on NUL(\0) terminated strings, so it is a common denominator.
 
-This solution is also resistant desynchronization attacks or vulnerabilities stemming from parser differences.
+This solution is also resistant to desynchronization attacks or vulnerabilities stemming from parser differences.
 
 ==== Constraints, Convention
 
