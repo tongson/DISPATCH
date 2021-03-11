@@ -46,7 +46,7 @@ This solution is also resistant to desynchronization attacks or vulnerabilities 
 
 ==== Constraints, Convention
 
-* Only transmission and device control codes *SHALL* be used.
+* Only __transmission__ and __device control__ codes *SHALL* be used.
 * Other codes like format effectors and information separators *MUST NOT* be used.
 * C1 codes *MUST NOT* be used.
 * Untrusted input *MUST* be encoded as base64 before adding as a JSON data value.
