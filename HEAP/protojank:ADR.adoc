@@ -32,7 +32,7 @@ The obvious choice but passing around Structs is complicated. C and Rust Structs
 No structure and steady overhead.
 
 ===== (e) TNetStrings
-More like a JSON alternative. Requires 8-bit clean, C strings are not.
+More like a JSON alternative. Requires 8-bit clean payloads, C strings are not.
 
 ===== (f) Mixed
 The solution we ended up with is a combination of C0 control codes, JSON, and base64.
