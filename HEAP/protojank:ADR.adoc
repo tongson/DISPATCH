@@ -8,7 +8,7 @@
 
 LuaJIT's C FFI is extremely good and fast. Rust can compile to dynamic libraries for C ABI interoperability. The idea is to write Rust libraries that LuaJIT can call into. This combination allows us to take advantage of the huge catalog of Rust crates. +
 
-We decide here the protocol to which Rust and LuaJIT can interface.
+We decide here, the protocol to which Rust and LuaJIT can interface.
 
 ==== Decision Drivers
 
