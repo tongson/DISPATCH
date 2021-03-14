@@ -31,7 +31,7 @@ Runner up but did not build without issues.
 ===== (e) github.com/FedericoPonzi/horust
 Looks like an equivalent to option (c) but written in Rust.
 
-===== (f) github.com//hivemind
+===== (f) github.com/DarthSim/hivemind
 The winner. Ticks all of the decision drivers.
 
 === Decision
