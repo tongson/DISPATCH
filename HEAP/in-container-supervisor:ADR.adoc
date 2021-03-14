@@ -22,8 +22,8 @@ First option considered. Configuration seems simple but it is really a replaceme
 ===== (b) systemd
 The host will certainly run systemd already. Nesting systemd might be problematic and it is not really lightweight.
 
-===== (c) github.com//supervisord
-Seems to be host process manager trying to replicate systemd features. Also did not build without issues.
+===== (c) github.com/ochinchina/supervisord
+Seems to be host process manager trying to replicate systemd features. Also did not build without issues. Inspired by Python supervisord.
 
 ===== (d) github.com//overseer
 Runner up but did not build without issues.
