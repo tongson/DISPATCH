@@ -10,7 +10,7 @@ It is a common practice to run a single process inside a container. In some case
 
 ==== Decision Drivers
 
-. Lightweight
+. Lightweight code and runtime
 . Easy to build from source
 . Simple configuration
 
