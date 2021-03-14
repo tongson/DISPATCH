@@ -25,7 +25,7 @@ The host will certainly run systemd already. Nesting systemd might be problemati
 ===== (c) github.com/ochinchina/supervisord
 Seems to be host process manager trying to replicate systemd features. Also did not build without issues. Inspired by Python supervisord.
 
-===== (d) github.com//overseer
+===== (d) github.com/ShinyTrinkets/overseer
 Runner up but did not build without issues.
 
 ===== (e) github.com//horust
