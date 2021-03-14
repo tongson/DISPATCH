@@ -1,0 +1,39 @@
+== Process manager or supervisor inside containers
+
+* Date: 2021-Mar-14
+* Deciders: @tongson
+* Status: ACCEPTED
+
+=== Context
+
+It is a common practice to run a single process inside a container. In some cases it is better to run similar or grouped processes inside a single container. Most stacks, even monoliths are actually made up of several processes.
+
+==== Decision Drivers
+
+. Lightweight
+. Easy to build from source
+. Simple configuration
+
+==== Considered Options
+
+===== (a) runit
+First option considered. Configuration seems simple but it is really a replacement for a host's process manager.
+
+===== (b) systemd
+The host will certainly run systemd already. Nesting systemd might be problematic and it is not really lightweight.
+
+===== (c) github.com//supervisord
+Seems to be host process manager trying to replicate systemd features. Also did not build without issues.
+
+===== (d) github.com//overseer
+Runner up but did not build without issues.
+
+===== (e) github.com//horust
+Looks like an equivalent to option (c) but written in Rust.
+
+===== (f) github.com//hivemind
+The winner. Ticks all of the decision drivers.
+
+=== Decision
+
+Option (f) is chosen. Hivemind is written in Go and can be compiled statically. Has sensible defaults, can load environment variables, and uses the Procfile format. The default termination behavior is to kill all managed processes if one of the processes die. I believe this is beneficial to keep all grouped processes state in sync.
