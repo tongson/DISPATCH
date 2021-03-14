@@ -36,4 +36,4 @@ The winner. Ticks all of the decision drivers.
 
 === Decision
 
-Option (f) is chosen. Hivemind is written in Go and can be compiled statically. Has sensible defaults, can load environment variables, and uses the Procfile format. The default termination behavior is to kill all managed processes if one of the processes die. I believe this is beneficial to keep all grouped processes state in sync.
+Option (f) is chosen. Hivemind is written in Go and can be compiled statically. Is very simple, can load environment variables, and uses the Procfile format. The default termination behavior is to kill all managed processes if one of the processes die. I believe this is beneficial to keep all grouped processes state in sync.
