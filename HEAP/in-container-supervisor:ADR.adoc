@@ -28,7 +28,7 @@ Seems to be host process manager trying to replicate systemd features. Also did 
 ===== (d) github.com/ShinyTrinkets/overseer
 Runner up but did not build without issues.
 
-===== (e) github.com//horust
+===== (e) github.com/FedericoPonzi/horust
 Looks like an equivalent to option (c) but written in Rust.
 
 ===== (f) github.com//hivemind
