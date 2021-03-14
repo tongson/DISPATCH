@@ -17,7 +17,7 @@ It is a common practice to run a single process inside a container. In some case
 ==== Considered Options
 
 ===== (a) runit
-First option considered. Configuration seems simple but it is really a replacement for a host's process manager.
+First option considered. Configuration seems simple but it is really a replacement for a host's process manager such as SysVinit or even systemd.
 
 ===== (b) systemd
 The host will certainly run systemd already. Nesting systemd might be problematic and it is not really lightweight.
