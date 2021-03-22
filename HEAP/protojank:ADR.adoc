@@ -34,7 +34,10 @@ No structure and steady overhead.
 ===== (e) TNetStrings
 More like a JSON alternative. Requires 8-bit clean payloads, C strings are not.
 
-===== (f) Mixed
+===== (f) Pointers
+Returning INT then writing/copying pointers works but the Rust side will be littered with unsafe blocks. A good default for returning predetermined byte lengths such as hashes.
+
+===== (g) Mixed
 The solution we ended up with is a combination of C0 control codes, JSON, and base64.
 
 
