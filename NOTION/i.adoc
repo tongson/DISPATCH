@@ -25,7 +25,7 @@ The logistics of secrets are the same as the prior solution. The cryptograhy use
 ==== Content Collaboration Platform (self-hosted)
 Self-hosted software is available that has fine-grained file-sharing capabilities. You do have to administer and maintain the service. A non-trivial overhead depending on your risk appetite. You manage and monitor user accounts of external parties that you share files or documents to. 
 
-If less administration is preferred then a file sharing service like the defunct Firefox Send. The links to files can expire and password protected. Since the files are stored on the server you still need skilled staff to maintain and monitor this service.
+If less administration is preferred then opt for a file sharing service like the defunct Firefox Send. The links to files can expire and password protected. Since the files are stored on the server you still need skilled staff to maintain and monitor this service.
 
 ==== Email Security SaaS
 Security products with DLP features usually have email security as an add-on. McAfee simply calls it Email Encryption Service. Trendmicro has this service branded as Private Post. First-time recipients are required to register an account to the SaaS to get access to the so-called pick-up portal. The portal works as a content collaboration platform.
