@@ -1,21 +1,47 @@
+== File sharing
+
 So you want to send an email with a confidential attachment. Maybe you just want some privacy. It is reasonable and should be easy. Yes, modern messaging platforms exist but email is so sturdy because of its ubiquity and federated nature.
 
 The Internet standards for email encryption are PGP and S/MIME but no one seems to use them. Properly using PGP or S/MIME requires senders and recipients to be configured to use either. Usability is pretty bad and encryption in an email is not mandatory. Adoption suffers because of these. It also does not help that everybody is using a centralized web-based email service such as Gmail. 
 
 In an ideal world, everybody should be using S/MIME. We do not have such luxury. Maybe we can look around and try to solve the problem in other ways. I will describe alternative solutions to sending encrypted email attachments. None of these will be perfect but most of these are easier to set up than PGP or S/MIME. I hope this helps with securing your transmission of documents or safeguard your privacy.
 
-
-
 === Password-protected Zip files
 
-The most widely used solution. From schools to corporate policies. This basic solution has the lowest cost and interoperability is a non-issue. Files are password protected by the sender then a password is predetermined per recipient. The password act like a pre-shared key. If dynamic passwords are required, these can be sent through another channel or out-of-band communication. Mentioning the password within the same email or even another email message defeats the purpose of protecting files.
+The most widely used solution. From schools to corporate policies. This basic solution has the lowest cost and interoperability is a non-issue. Files are password protected by the sender then a password is predetermined per recipient. The password act like a pre-shared secret. 
+
+The secret should be sent through another channel or out-of-band communication. Mentioning the password within the same email or even another email message defeats the purpose of protecting files.
 
 === Stateless web application
 
-=== Content Collaboration Platform  (cloud or on-premises)
+A variant of password-protected Zip files. Instead of Zip, we can use a stateless client-side application that does the encryption and decryption. The recipient and sender do not need to install anything since it's an application that runs on the browser.
+
+No files are stored or transmitted to the server. The server is only required to host the stateless web application.
+
+The logistics of secrets are the same as the prior solution.
+
+=== Content Collaboration Platform (self-hosted)
+
+Self-hosted software is available that has fine-grained file-sharing capabilities. You do have to administer and maintain the service. A non-trivial overhead depending on your risk appetite.
+
+You manage and monitor user accounts of external parties that you share files or documents to. 
 
 === Email Security SaaS
 
+Security products with DLP features usually have email security as an add-on. McAfee simply calls it Email Encryption Service. Trendmicro has this service branded as Private Post. First-time recipients are required to register an account to the SaaS to get access to the so-called pick-up portal. The portal works as a content collaboration platform.
+
+These are closed and proprietary services so it will be impossible to know how exactly the files are stored. Marketing materials and datasheets are not to be relied on.
+
+Almost all commercial DLP products use this model for selling subscriptions.
+
 === Drive/Shares
 
+A closer parallel to file sharing is client-side sync software and services like Google drive. 
+
+For client-side syncing, an initial setup between endpoints is required. This needs coordination between IT departments which is surely asking for trouble. Everybody has a Google account so there are fewer issues with the initial association.
+
+It can be unwieldy if you have to share with several parties.
+
 === Project Management SaaS
+
+Project management solutions with no per-user charges like Basecamp are a good value for collaborating with external parties. These SaaS usually has file-sharing capabilities besides the standard project management features.
