@@ -20,7 +20,7 @@ A variant of password-protected Zip files. Instead of Zip, we can use a stateles
 
 No files are stored or transmitted to the server. The server is only required to host the stateless web application.
 
-The logistics of secrets are the same as the prior solution.
+The logistics of secrets are the same as the prior solution. The cryptograhy used is better than the standard ZipCrypto when password protecting Zip files.
 
 ==== Content Collaboration Platform (self-hosted)
 Self-hosted software is available that has fine-grained file-sharing capabilities. You do have to administer and maintain the service. A non-trivial overhead depending on your risk appetite.
@@ -46,7 +46,7 @@ Project management solutions with no per-user charges like Basecamp are a good v
 
 === Conclusion
 
-If you do not require in-email file sharing then using a SaaS like Basecamp is highly recommended. Stick with password-protected Zip files if you need to do sharing within an email and you don't have skilled cybersecurity staff. If you have the manpower and budget then a DLP subscription is fine. The vague security claims, administration overhead, and costs are not to be ignored. It would be better to self-host a Content Collaboration Platform if you already have skilled staff.
+If you do not require in-email file sharing then using a SaaS like Basecamp is highly recommended. Stick with password-protected Zip files or the stateless web application if you need to do sharing within an email and you don't have skilled cybersecurity staff. If you have the manpower and budget then a DLP subscription is fine. The vague security claims, administration overhead, and costs are not to be ignored. It would be better to self-host a Content Collaboration Platform if you already have skilled staff.
 
 |=======================
 |Solution |Skills required |Cost |Rating
