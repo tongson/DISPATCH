@@ -1,3 +1,5 @@
+[big]*notion i*
+
 == File sharing
 
 So you want to send an email with a confidential attachment. Maybe you just want some privacy. It is reasonable and should be easy. Yes, modern messaging platforms exist but email is so sturdy because of its ubiquity and federated nature.
