@@ -45,3 +45,17 @@ It can be unwieldy if you have to share with several parties.
 === Project Management SaaS
 
 Project management solutions with no per-user charges like Basecamp are a good value for collaborating with external parties. These SaaS usually has file-sharing capabilities besides the standard project management features.
+
+== Conclusion
+
+If you do not require in-email file sharing then using a SaaS like Basecamp is highly recommended. Stick with password-protected Zip files if you need to do sharing within an email and you don't have skilled cybersecurity staff. If you have the manpower and budget then a DLP subscription is fine. The vague security claims, administration overhead, and costs are not to be ignored. 
+
+|=======================
+|Solution |Skills required |Cost |Rating
+|Zip      |Low | Negligible |Ok
+|Basecamp |Low | $99 per yr |Best
+|DLP      |High |Undefined |Ok
+|Stateless |Medium |$10 per month |Ok
+|CCP      |High |$20 per month |Ok
+|Sync     |Medium |Undefined |No
+|=======================
