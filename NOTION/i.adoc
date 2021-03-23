@@ -57,5 +57,5 @@ If you do not require in-email file sharing then using a SaaS like Basecamp is h
 |DLP      |High |Undefined |Ok
 |Stateless |Medium |$10 per month |Ok
 |CCP      |High |$20 per month |Ok
-|Sync     |Medium |Undefined |No
+|Sync     |Medium |Undefined |Bad
 |=======================
