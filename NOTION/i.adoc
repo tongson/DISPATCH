@@ -32,7 +32,7 @@ Security products with DLP features usually have email security as an add-on. Mc
 
 These are closed and proprietary services so it will be impossible to know how exactly the files are stored. Marketing materials and datasheets are not to be relied on.
 
-Almost all commercial DLP products use this model for selling subscriptions. Unfortunately, I did not find a free or open-sources equivalent of these SaaS.
+Almost all commercial DLP products use this model for selling subscriptions. Unfortunately, I did not find a free or open-sources equivalent of these SaaS. The closest are Content Collaboration Platforms mentioned above. 
 
 ==== Drive/Shares
 A closer parallel to file sharing is client-side sync software and services like Google drive. 
@@ -46,7 +46,7 @@ Project management solutions with no per-user charges like Basecamp are a good v
 
 === Conclusion
 
-If you do not require in-email file sharing then using a SaaS like Basecamp is highly recommended. Stick with password-protected Zip files if you need to do sharing within an email and you don't have skilled cybersecurity staff. If you have the manpower and budget then a DLP subscription is fine. The vague security claims, administration overhead, and costs are not to be ignored. 
+If you do not require in-email file sharing then using a SaaS like Basecamp is highly recommended. Stick with password-protected Zip files if you need to do sharing within an email and you don't have skilled cybersecurity staff. If you have the manpower and budget then a DLP subscription is fine. The vague security claims, administration overhead, and costs are not to be ignored. It would be better to self-host a Content Collaboration Platform if you already have skilled staff.
 
 |=======================
 |Solution |Skills required |Cost |Rating
