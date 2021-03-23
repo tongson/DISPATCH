@@ -30,7 +30,7 @@ Security products with DLP features usually have email security as an add-on. Mc
 
 These are closed and proprietary services so it will be impossible to know how exactly the files are stored. Marketing materials and datasheets are not to be relied on.
 
-Almost all commercial DLP products use this model for selling subscriptions.
+Almost all commercial DLP products use this model for selling subscriptions. Unfortunately, I did not find a free or open-sources equivalent of these SaaS.
 
 ==== Drive/Shares
 A closer parallel to file sharing is client-side sync software and services like Google drive. 
