@@ -11,6 +11,12 @@
 |Artificial Brain |Labyrinth Constellation |2014
 |Blood Incantation |Starspawn |2016
 |Blood Incantation |Hidden History of the Human Race |2019
+|Deathspell Omega |Fas – Ite, maledicti, in ignem aeternum |2007
+|Deathspell Omega |Paracletus |2010
+|Immortal |At the Heart of Winter |1999
+|Immortal |Damned in Black |2000
+|Immortal |Sons of Northern Darkness |2002
+|Inquisition |Ominous Doctrines of the Perpetual Mystical Macrocosm |2010
 |Nile |In Their Darkened Shrines |2002
 |Nile |Annihilation of the Wicked |2005
 |Spectral Voice |Eroded Corridors of Unbeing |2017
@@ -19,4 +25,6 @@
 |Ulcerate |Stare Into Death and Be Still |2020
 |Vektor |Black Future |2009
 |Vektor |Terminal Redux |2016
+|Void Rot |Descending Pillars |2020
+|Zhrine |Unortheta |2016
 |=======================
