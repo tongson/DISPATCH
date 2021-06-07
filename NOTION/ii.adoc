@@ -1,21 +1,23 @@
-[big]*Testing Strategy*
+[big]*notion i*
+
+== Testing Strategy*
 
 Presented here is a testing strategy that is applicable to a wide range of software from ToDo to DeFi apps. I’m going to focus a bit on JavaScript which is a dynamically typed language. But, a good software engineer can apply concepts proffered here.
 In software, engineers are not really engineers. Definitions are mostly made up. Some are luckily agreed upon. A popular software engineer can redefine terms as they see fit and turn public perspective. What I call functional might be integration in someone’s vocabulary. Hopefully, the supporting text might clarify a particular perspective.
 Even the first stages of pursuing code quality can go overboard. There can be a tendency to shove all possible linters into our developer’s VCS hooks but it is important to remember that we are here to deliver a quality product before quality code. One other thing to think about when implementing tests is to consider developer friction. We must strive to shorten the feedback loop.
 Any tools mentioned here is prescriptive in nature. A careful analysis of the testee and tools must come before. 
 
-=== Code Validation
+==== Code Validation
 Linters, static code analysis, SAST, and formatters can be part of the first stage of testing. They are essentially free and easy to automate using tools that can manage VCS hooks. Husky is popular among JS developers. Another more general tool is Lefthook. As much as possible they should be executed before code commits or one step beyond for a quick turnaround.
 There is a long list of eslint rules and plugins for consideration. For frontend security, there’s eslint-config-sec and eslint-plugin-security. Outside of eslint there are linters like lockfile-lint to assist in preventing injection of malicious modules. If you are raking in millions from your app then commercial static analysis products are also available to extend freely available linting tools.
 For my own use I prefer fast and virtually zero dependency software such as Deno, sadly it is not compatible with NodeJS projects or any project making money for that matter. It was fine for linting and formatting the meager code I wrote to demo some testing. I think it’s interesting to explore Deno for its standard library, WebAssembly, and TypeScript support.
 A careful analysis of an application’s profile should be performed to gauge the suitability of any validation tool. Fewer hooks are always better. Developers would disable any lint that grinds their gears. It is recommended to force the formatter, tabs vs. spaces may cause tribal wars.
 
-=== Unit Tests
+==== Unit Tests
 Next up in the pipeline are unit tests. I think most will consider this the first actual testing in this ordered list. Not sure why formatting your code is not considered testing your sanity. Units, such as functions or singular endpoints are tested. Unit tests should be automated, repeatable, fast, and easy to run; again towards less friction. For distributed development unit tests should be executed in designated infrastructure. Developer machines can be stolen or burnt to a crisp. Testing infrastructure augmented with containers(Linux cgroup/namespace) is very popular nowadays. In the old days, circa 1998, chroot(2) was topflight.
 For these kinds of tests for JS, the most popular at the moment is a framework called Jest. In my unit test demo, I have used Jest and Supertest to test the backend of the app. On the frontend I have used Jest and Enzyme. JS may have a few blemishes but it’s immensely popular. There’s no shortage of conflicting blogs and howtos to guide you in unit tests. The most trouble was from conjuring the correct babel incantation.
 
-=== Integration Tests
+==== Integration Tests
 Now we are trying to involve people closer to the operations of your applications. Your goal is to integrate the various components that make up your application. In my experience, you can get the best bang for your euros doing front-to-back testing. Only savages would do integration tests from the backend. An alternative to front-to-back in hectic situations such as during disaster recovery is isolated testing of a critical or affected part of your application.
 Russians have innovated the reverse proxy space and it is not acceptable to directly expose a NodeJS or Ruby interpreter to a network beyond localhost. With a reverse proxy, you can easily gather metrics. My preferred tool for reverse proxying and load balancing is Traefik. Any other equivalent software or service like the one in AWS should work fine.
 Instrumentation and observability come in. You are now starting to understand the behavior of your applications. Hopefully, you will know what your application looks like when it is working as expected. To assist, you need to have metrics and logs. I have worked with old stuff like Nagios, RRDtool, syslog-ng up to modern tools like the ELK stack. Now I prefer the Prometheus stack for metrics and logs. Simple to setup and configure. Lighter both in computer and brain resources. Grafana and Loki are popular tools to support Prometheus.
@@ -24,17 +26,17 @@ The behavior of the application during higher load should be understood and to s
 Testing from the point of view of frontend performance can be done with tools such as Lighthouse and PageSpeed Insights. Browser automation frameworks can be used to perform what most call a functional test against the frontend.
 You can do integration testing against staging infrastructure or along with a deployment technique such as Blue-Green deploys. In this scenario, you have at least two environments, you swap between depending on the results of the integration tests.
 
-=== Acceptance Tests
+==== Acceptance Tests
 Solo developers love this kind of test. Their products with single-digit users can test in production. In reality, non-production test infrastructure will never be full-fidelity. Hopefully state-related and corruption issues have been dealt with in the earlier phases of our testing.
 Fortunately, there is a release strategy for legitimate products. The canary release, named after a sacrificial songbird. You add an unfeathered release along with production and armed with metrics and logs; you monitor error rates and performance. If it doesn’t die and looks ok to fly then you have a good release.
 For the brave ones, you can also do Blue-Green. Rollback to the other environment if error rates and monitoring results do not look good.
 
-=== Functional Tests
+==== Functional Tests
 A software engineer should not keep too many things in their head. To help with that, we merge functional and system testing here. These tests take up the most resources and require extensive documentation of specifications and requirements. Consultants and testers are invited to join.
 Possibly a conflict or misunderstanding of definitions. Maybe you are actually talking about integration tests or acceptance tests if you have checklists. Those are not formal specifications. I have seen yellow pages thick of specifications. We have to at least dedicate a testing definition for those that use those monsters.
 A professor with a Ph.D. in software testing would scream profanities against us because of putting functional testing last priority. In a fully red-taped enterprise, I would prioritize these over acceptance testing. But, I’m sure we don’t have years to allocate for a successful run of functional testing.
 
-=== Final Thoughts
+==== Final Thoughts
 I’m sure I have missed something in the testing du jour. I leave you with my final thoughts about code quality and testing.
 I think I have not mentioned blackbox testing. Those along with Dynamic Application Security Testing can be performed during integration tests and onwards. They are equivalent to a single process in the larger scheme of tests. There’s recovery testing also which is important but not really part of code testing. I believe it’s something people closer to the operations and security side should focus on. Another neglected testing is startup testing. Ever wonder how failures are recovered? These are critical to recovery, so startup code and procedures should be tested too.
 It is widely accepted that improper error handling is the most frequent source of failure. It is debatable if it can be sufficiently tested without static typing. For a dynamically typed language, code reviews would be a good venue to catch these blunders. Reviews are an important part of code quality but it is not part of testing.
