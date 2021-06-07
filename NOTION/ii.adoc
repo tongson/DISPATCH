@@ -1,6 +1,6 @@
 [big]*notion i*
 
-== Testing Strategy*
+== Testing Strategy
 
 Presented here is a testing strategy that is applicable to a wide range of software from ToDo to DeFi apps. I’m going to focus a bit on JavaScript which is a dynamically typed language. But, a good software engineer can apply concepts proffered here.
 In software, engineers are not really engineers. Definitions are mostly made up. Some are luckily agreed upon. A popular software engineer can redefine terms as they see fit and turn public perspective. What I call functional might be integration in someone’s vocabulary. Hopefully, the supporting text might clarify a particular perspective.
