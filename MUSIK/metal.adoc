@@ -8,6 +8,7 @@
 |Agalloch |Ashes Against the Grain |2006
 |Agalloch |Marrow of the Spirit |2010
 |Ahab |The Call of the Wretched Sea |2006
+|Akhlys |Melinoë |2020
 |Artificial Brain |Labyrinth Constellation |2014
 |Bloodbath |The Wacken Carnage |2008
 |Blood Incantation |Starspawn |2016
@@ -16,10 +17,12 @@
 |Deathspell Omega |Paracletus |2010
 |Dissection |Storm of the Light's Bane |1995
 |Dissection |Live in Stockholm 2004 |2009
+|Enslaved | Below the Lights |2003
 |Immortal |At the Heart of Winter |1999
 |Immortal |Damned in Black |2000
 |Immortal |Sons of Northern Darkness |2002
 |Inquisition |Ominous Doctrines of the Perpetual Mystical Macrocosm |2010
+|Lost Horizon |Awakening the World |2001
 |Lost Horizon |A Flame to the Ground Beneath |2003
 |Mare |Mare |2004
 |Mayhem |De Mysteriis Dom Sathanas Alive |2017
