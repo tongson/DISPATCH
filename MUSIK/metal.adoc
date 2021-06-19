@@ -10,6 +10,7 @@
 |Ahab |The Call of the Wretched Sea |2006
 |Akhlys |Melinoë |2020
 |Artificial Brain |Labyrinth Constellation |2014
+|Ash Borer |Ash Borer |2011
 |Bloodbath |The Wacken Carnage |2008
 |Blood Incantation |Starspawn |2016
 |Blood Incantation |Hidden History of the Human Race |2019
@@ -18,6 +19,7 @@
 |Dissection |Storm of the Light's Bane |1995
 |Dissection |Live in Stockholm 2004 |2009
 |Enslaved | Below the Lights |2003
+|Fleshvessel |Bile of Man Reborn EP |2020
 |Immortal |At the Heart of Winter |1999
 |Immortal |Damned in Black |2000
 |Immortal |Sons of Northern Darkness |2002
@@ -46,6 +48,7 @@
 |Savatage |Ghost in the Ruins: A Tribute to Criss Oliva |1995
 |Solothus |Realm of Ash and Blood |2020
 |Spectral Voice |Eroded Corridors of Unbeing |2017
+|Suffering Hour |The Cyclic Reckoning |2021
 |The Ruins of Beverast |Exuvia |2017
 |Their Dogs Were Astronauts |Earthkeeper |2015
 |Ulcerate |Everything Is Fire |2009
@@ -58,5 +61,6 @@
 |Wake |Devouring Ruin |2020
 |Warhorse |As Heaven Turns to Ash |2001
 |Warning |Watching From a Distance |2006
+|Wayfarer |A Romance With Violence |2020
 |Zhrine |Unortheta |2016
 |=======================
