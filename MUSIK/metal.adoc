@@ -11,9 +11,15 @@
 |Akhlys |Melinoë |2020
 |Artificial Brain |Labyrinth Constellation |2014
 |Ash Borer |Ash Borer |2011
+|Black Sabbath |Paranoid |1970
+|Black Sabbath |Master of Reality |1971
+|Black Sabbath |Sabbath Bloody Sabbath |1973
+|Black Sabbath |Heaven and Hell |1980
 |Bloodbath |The Wacken Carnage |2008
 |Blood Incantation |Starspawn |2016
 |Blood Incantation |Hidden History of the Human Race |2019
+|Bruce Dickinson |Accident of Birth |1997
+|Bruce Dickinson |The Chemical Wedding |1998
 |Cattle Decapitation |Monolith of Humanity |2012
 |Caustic Wound |Death Posture |2020
 |Chthe'ilist |Le dernier crépuscule |2016
@@ -27,17 +33,30 @@
 |Horrendous |Ecdysis |2014
 |Horrendous |Anareta |2015
 |Horrendous |Idol |2018
+|Iced Earth |Burnt Offerings |1995
+|Iced Earth |Days of Purgatory |1997
+|Iced Earth |Something Wicked This Way Comes |1998
+|Iced Earth |Live in Athens |1999
 |Immortal |At the Heart of Winter |1999
 |Immortal |Damned in Black |2000
 |Immortal |Sons of Northern Darkness |2002
 |Inquisition |Ominous Doctrines of the Perpetual Mystical Macrocosm |2010
+|Iron Maiden |Powerslave |1984
+|Iron Maiden |Seventh Son of a Seventh Son |1988
+|Iron Maiden |Live After Death |1985
+|Judas Priest |Painkiller |1990
 |Lost Horizon |Awakening the World |2001
 |Lost Horizon |A Flame to the Ground Beneath |2003
 |Mare |Mare |2004
 |Mayhem |De Mysteriis Dom Sathanas Alive |2017
+|Megadeth |Rust in Peach |1990
 |Megadeth |Rust in Peace: Live |2010
 |Melvins |Houdini Live 2005: A Live History of Gluttony and Lust |2006
 |Metal Church |Metal Church |1984
+|Metallica |Kill 'Em All |1983
+|Metallica |Ride the Lightning |1984
+|Metallica |Master of Puppets |1986
+|Metallica |...And Justice for All |1988
 |Misþyrming |Söngvar elds og óreiðu |2015
 |Modern Babylon |Travelers |2013
 |Modern Babylon |COMA |2018
@@ -51,6 +70,7 @@
 |Nile |Annihilation of the Wicked |2005
 |Omega Massif |Karpatia |2011
 |Opeth |Lamentations: Live at Shepherd's Bush Empire 2003 |2006
+|Ozzy Osbourne |Tribute |1987
 |Pelican |Australasia |2003
 |Pelican |The Fire in Our Throats Will Beckon the Thaw |2005
 |Savatage |Ghost in the Ruins: A Tribute to Criss Oliva |1995
