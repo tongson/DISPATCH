@@ -15,6 +15,10 @@
 |Black Sabbath |Master of Reality |1971
 |Black Sabbath |Sabbath Bloody Sabbath |1973
 |Black Sabbath |Heaven and Hell |1980
+|Blind Guardian |Tales From the Twilight World |1990
+|Blind Guardian |Somewhere Far Beyond |1992
+|Blind Guardian |Imaginations From the Other Side |1995
+|Blind Guardian |Nightfall in Middle-Earth |1998
 |Bloodbath |The Wacken Carnage |2008
 |Blood Incantation |Starspawn |2016
 |Blood Incantation |Hidden History of the Human Race |2019
@@ -30,6 +34,9 @@
 |Enslaved | Below the Lights |2003
 |Esoctrilihum |Eternity of Shaog |2020
 |Fleshvessel |Bile of Man Reborn EP |2020
+|Helloween |Keeper of the Seven Keys II |1988
+|Helstar |Nosferatu |1989
+|Hibria |Defying the Rules |2004
 |Horrendous |Ecdysis |2014
 |Horrendous |Anareta |2015
 |Horrendous |Idol |2018
@@ -45,6 +52,9 @@
 |Iron Maiden |Seventh Son of a Seventh Son |1988
 |Iron Maiden |Live After Death |1985
 |Judas Priest |Painkiller |1990
+|Labyrinth |Return to Heaven Denied |1998
+|Labyrinth |Return to Live |2018
+|Liege Lord |Master Control |1988
 |Lost Horizon |Awakening the World |2001
 |Lost Horizon |A Flame to the Ground Beneath |2003
 |Mare |Mare |2004
@@ -73,11 +83,15 @@
 |Ozzy Osbourne |Tribute |1987
 |Pelican |Australasia |2003
 |Pelican |The Fire in Our Throats Will Beckon the Thaw |2005
+|Riot |ThunderSteel |1988
 |Savatage |Ghost in the Ruins: A Tribute to Criss Oliva |1995
+|Scanner |Hypertrace |1988
 |Solothus |Realm of Ash and Blood |2020
 |Spectral Voice |Eroded Corridors of Unbeing |2017
 |Suffering Hour |The Cyclic Reckoning |2021
 |Tchornobog |Tchornobog |2017
+|The Lord Weird Slough Feg |Down Among the Deadmen |2005
+|The Lord Weird Slough Feg |Traveller |2003
 |The Ruins of Beverast |Exuvia |2017
 |Their Dogs Were Astronauts |Earthkeeper |2015
 |Ulcerate |Everything Is Fire |2009
